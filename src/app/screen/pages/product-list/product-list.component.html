@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row pt-3">
+    <div class="col-md-4 pr-3 pt-3"  *ngFor="let item of products">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{item.urunResim}}">
+          <h5 class="card-title">{{item.urunadi}} ** {{item.urunfiyati}}  </h5>
+          <p class="card-text">{{item.urunAciklamasi}}</p>
+          <div class="row">
+            <div class="col-md-12 " style="justify-content: right; text-align: right; float: right">
+              <a href="/home/product-detail/{{item.id}}" class="btn btn-primary">Urun Detay</a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+

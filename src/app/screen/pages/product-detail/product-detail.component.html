@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <div class="container-fliud">
+      <div class="wrapper row">
+        <div class="preview col-md-6">
+          <div class="preview-pic tab-content">
+            <img src="{{this.product.urunResim}}" />
+          </div>
+        </div>
+        <div class="details col-md-6">
+          <h3 class="product-title">{{this.product.urunadi}}</h3>
+          <div class="rating">
+            <div class="stars">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="review-no">{{product.urunkategori}}</span>
+          </div>
+          <p class="product-description">{{this.product.urunAciklamasi}}</p>
+          <h4 class="price">current price: <span>{{product.urunfiyati}}</span></h4>
+
+          <div class="action">
+            <button class="add-to-cart btn btn-default" type="button" (click)="AddFavorite()">Add to favorite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

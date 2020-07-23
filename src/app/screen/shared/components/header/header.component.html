@@ -1,0 +1,215 @@
+<body>
+
+<div class="overlay"></div>
+
+<div class="utility-nav d-none d-md-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="small"><i class="bx bx-envelope"></i> localhost@gmail.com | <i class="bx bx-phone"></i> +91-9876543210
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 text-right">
+        <p class="small">Free shipping on total of $100 of all products</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light main-menu" style="box-shadow:none">
+  <div class="container">
+    <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
+      <i class="bx bx-menu icon-single"></i>
+    </button>
+    <a class="navbar-brand" href="/home/product-list">
+      <h4 class="font-weight-bold">Logo</h4>
+    </a>
+    <ul class="navbar-nav ml-auto d-block d-md-none">
+      <li class="nav-item">
+        <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+      </li>
+    </ul>
+    <div class="collapse navbar-collapse">
+      <form class="form-inline my-2 my-lg-0 mx-auto">
+        <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-0" type="submit">
+          <img id="img-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEDklEQVRoQ9VYi3ETMRB9qiCmgkAFhAoCFUAqwKkAqACoAKggSQWECjAVkA4wFWAqOOZdpJu99Upa6WwGNMNMOEvafW/ffu4COlYAMHSc8xzRd9ds8feDrWSs5ETNIa8z0pb3zF/fVwL7XwDwMLZUQs8BvADwEMAKwFlk5g7ADsAWwC2ALx5nevb0AKCjH6Lj/NuzCIZA3kRg5hlPflj55XEg7XkL4HVku+Vc2ksgHwG8Tw88TpcMeSNApr9SItZlnmRT5yixZwHY1cpxDaAHAJ2m85ZcfkZpbKLe6RgXzzAvnkapnRrAmR8XANKZnoiiBoBO/5DOR0bo+DsA19Jqga113K+BEMSTUl5IqfFvHbEZgPQfsem7IRtWFDq0a+yaJIOAWbnkYgQIomuVIkCGmbRy3QRgbem2AQxBvFT3Mqlpr3nlAOxJJ9Zy1nz3KkiKJVVGgtXpUU+JzQHQLFHzTEwamq1alcigXQVgOwAn4vebKM0xMVOUa/fnAPxSVedSJ6w7DPmNzKMrMdOwpD5ovTcYCCmTz+Iiss+S2MSM0xFWoVNRPFhWKS/3siIwk08APrH71hqO2+J8I7vyKxGFyVZNOukaC8AmAOfCYRcrXoMKqI72t9j83HxYAHTtZ42+Eyw1v40VwLEw0F6S56wneEiZAIjNxWYnqbFAtQINwKAMjnnJ5e03OlxuAO44Gxt7CJO6l2VWX88wPhYPRwktcbZwdpJQ3DNVPK89q4xysjwXF+wlsUebFluG/I6SxLoLj6Wt5pCXMbVvLKPi2cyW506rCk2sRKbZbDinLFqZqHFUH5tkXK6SrSNpOcaZR84pRxslhPHfEczevFVizjvMNb14yDKWYd6admcjtTfPSuM0nT4RF90G4OJAIwVnLT2aU6a0WVwaWA4AL7FeaJjglNOSdZXGZnHJwV9o0t26J/A5p0WCmLRqhVt35ACsBoDOa+bH2u+VjGauFAHOJzQ6Skkd5DNGiC8h5lIO8RWSJTP3IcwsEiViktEigLiJ3ZKsm59Gwv1vmwEgk2PHDsDZcL8/fVaRpTKHuavS7QEoVA12aDliLMkDgrUIaQbhiYB0lLJhV9aS2gNT0HRK2PGV0mChCYQJoJJQ1DH1zGSsAokOskmxgvHcVtxfBOFJ7NYIaMIIQn5eTxKjRJjozAlKj/9yHXZRJHoiMHu5txLBw5w6N/tCIX6ryqk5AiXnOhyXONwgpB1vFVpScVrO5uSUHTOaIyC9seYSz6ykGVRn1gG4Es8uA3CdGxC7ASyUSy0qKRKHz4GaZedoMW0rEMHu7ZpOe336J865JXRkybR08tneEUDNudrvnjsO1C9MoEeXgocA7YT3jFtCSwx4SquHxdz7QfaslwWP8SV7Sn78ATUgFEAeNN8XAAAAAElFTkSuQmCC"/></button>
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="btn btn-link" href="#">
+            <img id="basket" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADmElEQVRoQ71Z7XXVMAy9noAyAe0EwASUCYAJChMAE/R1AmACukFhgrYTFCagTABMEM7NiXMcRbYkv7z6T9tYtnR19ZU0oVgJwFA+AKA9EyIuGXlmq79pX9fyALOcYyn26OgGQOUeBZaR2n6+t7y/pssEsJWRW92zCt/WxYdS2sNK7YzKQMDwIwDXAD4CuAkadgrgE4CXAP4Gz87iZggZF18COJtkCOAdgHvjzDGArwAIgOsLgA+thLeiZKXPycAzAHfiMJn4bADYATgXMicO4Oq1yWmsVnGuE3Ba9I3fAOhdzyJLTwpBssdQCq/eEHoN4EqUOxrgzYPxvLA2cj6eA4KpX8Lbt4INjycJ9gUFJy/eDwBDKbR6GJhjuADVE8O9ObQAOANw5gLLJr3Pn3mtqkjAhWUV4zGWUzrDXVajDEiF/6ZQcisU4OgIJvSjXodEGNiE8mxowfheZTXCADtubj60o1k2nSGZ8SzKagJuBmdZHQE4lG1W9ir5od4/AWmmlJeBVdkUbLjztuGsuaxOl5EVs6xqAOgNDlnHmjIHW24wQUEC4qjyrTynAVh4u2ZwBEhE1gC1YkUDwJJYlrWgo7YTV4CzbJc9KHfxhVJS9Go7M9o3Bdn5DoAhPi+tCr2d5vUuDNG8KeXFcLgwcpp6+b5xKc9IQzkSMw8efDnYOEkAh74lA4qlcl43e4VDeZdDinvVxlnrA3yreh81qiUfDS0FrTo0LgAUSrTOWPOgdIL8uCfPReXz+TeyB3BDZSABRwPwx8m5dMJgIOgF8JhjtmSyNUrI1l5lQFwaYiABFmDqva2NLi0A2pirgYh6tCmfN4UXLhKw0zwzX6YkmTb/HxxAhebnAH54lEsZz1ixKQOKkYvxIZIDvMszVkgWQzmg/EtCYliND6tRIj9Qwmg1VigyI4DieRNAApIQsACP44O3hveMFWYICdCmvHBo85NNqwrle1ZjhVCgMtDoyhHGzM+VHgDjWFGrABb/JZAGqFqEmN+cPAAiY4WzebvF1PGhjAATQB4rat6rNB63hYbgOD60ZEwA0+FxrOgIAReQyr3V8aFaRhvadgk4ly8SVvy7rK8LXQDgODMuKwIsXQd5S9OMKp65vnh7Q4gAq9XIQt/yYOXsXH1aYcu9FQAjKdmZ+Q+5pyW1/H2jcPo5OWruvFbeRRjwOPrBZTYHEG1cloctj7gA7KvEMmKffRcAS4FRTZrHLedY+/8BwTfrMwHfub8AAAAASUVORK5CYII="/> <span class="badge badge-danger">3</span></a>
+        </li>
+        <li class="nav-item ml-md-3">
+          <a class="btn btn-primary" (click)="logout()" href="#"><i class="bx bxs-user-circle mr-1"></i> Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sub-menu">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Anasayfa <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/home/product-list">Ürünler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/home/user-list">Kullanıcılar</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+             role="button" data-toggle="dropdown" aria-haspopup="true"
+             aria-expanded="false">
+            Yerlerimiz
+
+
+            <div class="dropdown-menu nav-item dropdown" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Delivery Information</a>
+            <a class="dropdown-item" href="#">Privacy Policy</a>
+            <a class="dropdown-item" href="#">Terms & Conditions</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/home/contact">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="search-bar d-block d-md-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="form-inline mb-3 mx-auto">
+          <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+          <button class="btn btn-success" type="submit"><i class="bx bx-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-10 pl-0">
+          <a class="btn btn-primary" href="#"><i class="bx bxs-user-circle mr-1"></i> Log In</a>
+        </div>
+
+        <div class="col-2 text-left">
+          <button type="button" id="sidebarCollapseX" class="btn btn-link">
+            <i class="bx bx-x icon-single"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="list-unstyled components links">
+    <li class="active">
+      <a href="#"><i class="bx bx-home mr-3"></i> Home</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-carousel mr-3"></i> Products</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-book-open mr-3"></i> Schools</a>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-crown mr-3"></i> Publishers</a>
+    </li>
+    <li>
+      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="bx bx-help-circle mr-3"></i>
+        Support</a>
+      <ul class="collapse list-unstyled" id="pageSubmenu">
+        <li>
+          <a href="#">Delivery Information</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Terms & Conditions</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#"><i class="bx bx-phone mr-3"></i> Contact</a>
+    </li>
+  </ul>
+
+  <h6 class="text-uppercase mb-1">Categories</h6>
+  <ul class="list-unstyled components mb-3">
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+    <li>
+      <a href="#">Category 1</a>
+    </li>
+  </ul>
+
+  <ul class="social-icons">
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-facebook-square"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-twitter"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-linkedin"></i></a></li>
+    <li><a href="#" target="_blank" title=""><i class="bx bxl-instagram"></i></a></li>
+  </ul>
+
+</nav>
+
+
+
+<script>
+
+  $(document).ready(function() {
+    $("#sidebarCollapse").on("click", function() {
+      $("#sidebar").addClass("active");
+    });
+
+    $("#sidebarCollapseX").on("click", function() {
+      $("#sidebar").removeClass("active");
+    });
+
+    $("#sidebarCollapse").on("click", function() {
+      if ($("#sidebar").hasClass("active")) {
+        $(".overlay").addClass("visible");
+        console.log("it's working!");
+      }
+    });
+
+    $("#sidebarCollapseX").on("click", function() {
+      $(".overlay").removeClass("visible");
+    });
+  })
+
+
+</script>
+
+

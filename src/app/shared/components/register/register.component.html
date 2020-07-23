@@ -1,0 +1,59 @@
+<div class="container pt-5">
+  <div class="card bg-light ">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Create Account</h4>
+      <p class="text-center">Get started with your free account</p>
+
+      <p class="divider-text">
+        <span class="bg-light">OR</span>
+      </p>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)" >
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input name="name" [(ngModel)]="user.isim" formControlName="name" class="form-control" placeholder="Name" type="text" required>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input name="surname" [(ngModel)]="user.soyisim" formControlName="surname" class="form-control" placeholder="Surname" type="text" required>
+        </div> <!-- form-group// -->
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+          <input name="username" [(ngModel)]="user.username" formControlName="username" class="form-control" placeholder="Username" type="text" required>
+        </div> <!-- form-group// -->
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+          <input  name="email" [(ngModel)]="user.mail" formControlName="email" class="form-control" placeholder="Email address" type="email" required>
+        </div> <!-- form-group// -->
+
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" [(ngModel)]="user.parola" formControlName="password" placeholder="Create password" type="password" required>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" [(ngModel)]="password" formControlName="repeatPassword" placeholder="Repeat password" type="password" (keyup)="passwordControl()" required>
+        </div> <!-- form-group// -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block"  [disabled]="!passwordMatch && !registerForm.valid"> Create Account  </button>
+        </div> <!-- form-group// -->
+        <p class="text-center">Have an account? <a href="/login" >Log In</a> </p>
+      </form>
+    </article>
+  </div> <!-- card.// -->
+
+</div>
+<!--container end.//-->
