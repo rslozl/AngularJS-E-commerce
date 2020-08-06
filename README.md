@@ -29,4 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![Screenshot](https://raw.githubusercontent.com/rslozl/AngularJS-E-commerce/master/3.png)
 ![Screenshot](https://raw.githubusercontent.com/rslozl/AngularJS-E-commerce/master/2.png)
 ![Screenshot](https://raw.githubusercontent.com/rslozl/AngularJS-E-commerce/master/4.png)
+## Contact Page
+![Screenshot](https://raw.githubusercontent.com/rslozl/AngularJS-E-commerce/master/5.png)
+![Screenshot](https://raw.githubusercontent.com/rslozl/AngularJS-E-commerce/master/6.png)
+
+
+
 
